@@ -122,3 +122,57 @@ fetch('https://randomuser.me/api/?results=3')
 .catch(error => {
   console.log('Ha ocurrido un error al obtener los comentarios:', error);
 });
+
+
+/*BOTON - HISTORIA COMPLETA*/
+
+// Obtener referencia al botón
+const botonMostrarHistoria = document.getElementById('mostrarHistoria');
+
+// Asignar evento click al botón
+botonMostrarHistoria.addEventListener('click', mostrarVentanaHistoria);
+
+// Función que muestra la ventana y escribe el texto
+function mostrarVentanaHistoria() {
+  // Abrir una nueva ventana
+  const ventanaHistoria = window.open('', 'VentanaHistoria', 'width=800,height=600');
+
+  // Escribir el texto en la ventana
+  ventanaHistoria.document.write(`
+    <html>
+    <head>
+      <title>Historia de ByteBar</title>
+      <style>
+        body {
+          font-family: Arial, sans-serif;
+          line-height: 1.5;
+          padding: 20px;
+        }
+      </style>
+    </head>
+    <body>
+      <h1>Historia de ByteBar</h1>
+      <p>
+¡Por supuesto! A continuación, te presento una historia inventada pero emocionante para la sección "Nosotros" de la página web de ByteBar, el resto bar ubicado en Córdoba Capital, Argentina:
+
+¡Bienvenidos a ByteBar, el lugar donde los sabores se fusionan con la pasión por la tecnología en el corazón de Córdoba Capital! Nuestra historia se remonta a 1995, cuando dos hermanos, Marcos y Ana, decidieron dar vida a su visión de crear un espacio único que combinara la pasión por la buena comida con la innovación tecnológica.
+
+Marcos, un talentoso chef con un amor inmenso por la cocina de autor, y Ana, una ingeniera apasionada por las últimas tendencias tecnológicas, unieron sus fuerzas para crear ByteBar. Su objetivo era simple pero ambicioso: ofrecer a los comensales una experiencia culinaria excepcional y sumergirlos en un ambiente lleno de sorpresas tecnológicas.
+
+En ByteBar, nuestra misión es deleitarte con una variedad de platos inspirados en la cocina internacional, elaborados con ingredientes frescos y locales de la región de Córdoba. Desde exquisitas tapas argentinas hasta sabores asiáticos cautivadores, nuestra carta es una fusión de culturas que se mezclan para crear un festín para tus sentidos.
+
+El ambiente en ByteBar es único y cautivador. Nuestra decoración moderna y elegante se combina con elementos tecnológicos innovadores, creando una atmósfera futurista que te transportará a otro mundo. Ya sea que estés disfrutando de nuestra terraza al aire libre con vistas panorámicas de la ciudad o explorando nuestras áreas interactivas llenas de juegos de luces y hologramas, cada rincón de ByteBar te sorprenderá.
+
+Nuestro equipo está compuesto por apasionados chefs, mixólogos expertos y un personal amable y atento, dedicados a brindarte un servicio excepcional en cada visita. Trabajamos en estrecha colaboración con proveedores locales para garantizar la frescura y calidad de nuestros ingredientes, y nos enorgullece ofrecer platos únicos y cócteles innovadores que satisfarán incluso a los paladares más exigentes.
+
+Además de nuestra oferta culinaria, en ByteBar nos esforzamos por ofrecer una experiencia completa. Organizamos eventos temáticos emocionantes, desde noches de jazz en vivo hasta exhibiciones de realidad virtual, que te mantendrán entretenido y maravillado durante toda tu visita. Además, estamos comprometidos con nuestra comunidad, colaborando con organizaciones locales para apoyar proyectos sociales y promover el desarrollo sostenible en Córdoba.
+
+En ByteBar, la innovación, la excelencia culinaria y la pasión por la tecnología se unen para brindarte una experiencia gastronómica única en Córdoba Capital. ¡Ven y únete a nosotros en este viaje culinario donde cada bocado es una experiencia extraordinaria!</p>
+      <!-- Resto del texto -->
+    </body>
+    </html>
+  `);
+
+  // Cerrar la escritura en la ventana
+  ventanaHistoria.document.close();
+}
