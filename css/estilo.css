@@ -596,7 +596,7 @@ margin: 0 4em 10em 4em ;
     width: 50px;
     border-radius: 50px;
     /*border: 1px solid #f2f2f2f2;*/
-    background-image: url("imagenes/linkedin.png");
+    background-image: url("/imagenes/linkedin.png");
     background-position: center;
     background-size: 100%;
     background-repeat: no-repeat;
@@ -609,11 +609,11 @@ margin: 0 4em 10em 4em ;
 }
 
 .social-icon:nth-of-type(2){
-    background-image: url("imagenes/github.png");
+    background-image: url("/imagenes/github.png");
     background-color: white;
 } 
 .social-icon:nth-of-type(3){
-    background-image: url("imagenes/whatsapp.png");
+    background-image: url("/imagenes/whatsapp.png");
 } 
 
 .footer-conteiner-copy {
