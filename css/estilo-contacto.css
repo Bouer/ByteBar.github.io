@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    max-width: 2000px ;
+}
+
+:root {
+    /*VARIABLES DE CSS*/
+    --back-color: white;
+    --color-primario: #0769e9;
+    --color-secundario: #F7C331;
+    --color-texto-invertido: white;
+    --color-texto: black;
+    --navbar-color: rgba(54, 53, 53, 0.6);
+    --seleccion-color: rgba(124, 123, 123, 0.6);
+    --mobile-background-color: #3A4460;
+}
+html {
+font-family: 'Roboto', sans-serif;
+}
+body {
+padding: 0 10px 0;
+}
+/*HEADER*/
+.header {
+  height: 800px;
+  width: 100%;
+  
+}
+
+.nav {
+  display: flex;
+  margin: 0 auto;
+  background-color: var(--navbar-color);    
+  line-height: 30px;
+    
+}
+
+.nav-link {
+    color: var(--text-color-inverse);
+    text-decoration: none;
+}
+
+.nav-menu {
+  display: flex;
+  margin-right: 40px;
+  list-style: none;
+  
+}
+.nav-menu-item {
+    font-size: 18px;
+    margin: 0 10px;
+    line-height: 90px;
+    text-transform: uppercase;
+   
+}
+.nav-menu-link {
+    padding: 8px 12px;
+    border-radius: 3px;
+}
+.nav-menu-link:hover {
+    background-color: var(--seleccion-color);
+    border-radius: 15px;
+    transition: .5s;
+}
+.burguer-item {
+  display: none;
+}
+
+.nav-buscador {
+    margin: 25px auto 0 auto;
+    border: 3px solid #020202;
+    border-radius: 8px;
+    font-size: 16px;
+    max-height: 45px;
+    width: 30%;
+    opacity: 0.8;
+    transition: width 0.4s ease-in-out;
+}
+.nav-buscador:focus {
+    width: 50%;
+}
+
+
+  /*FOOTER*/
+
+  footer {
+    width:100%;
+    /*position: absolute;*/
+    bottom: 0;
+    margin-left: 0;
+    
+    /*Imagenes de fondo*/
+    background-image: url("/imagenes/fondo-textura-hormigon-oscuro.jpg"); 
+    background-size: cover;
+   
+}
+
+
+.footer-conteiner {
+  display: flex;
+  flex-direction:row;
+  justify-content:space-around;
+  align-items: center;
+}
+.footer-conteiner-img{
+ opacity: 0.6; 
+}
+
+.social-iconos , .footer-menu {
+    display: flex;
+    
+
+}
+
+.social-icon {
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+    /*border: 1px solid #f2f2f2f2;*/
+    background-image: url("/imagenes/linkedin.png");
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin: 1rem;
+}
+
+.social-icon:hover{
+    background-color: black;
+    filter: invert(1);
+}
+
+.social-icon:nth-of-type(2){
+    background-image: url("/imagenes/github.png");
+    background-color: white;
+} 
+.social-icon:nth-of-type(3){
+    background-image: url("/imagenes/whatsapp.png");
+} 
+
+.footer-conteiner-copy {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  color: var(--color-texto-invertido);
+
+  margin: 5em 0 0 0;
+}
+
+
+
+
+
