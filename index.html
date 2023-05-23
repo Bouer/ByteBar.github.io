@@ -27,7 +27,7 @@
 
 </head>
 <body>
-    <header class="header" id="inicio">
+    <header class="header" id="header-back">
         <div class="header-nav">
             <nav class="nav">
                 
@@ -52,6 +52,15 @@
                   </li>
                 </ul>
             </nav>
+            <div class="nav secciones" id="secciones-back">
+              <ul class="secciones-menu">
+                <il class="secciones-menu-link"><a href="#header-back">Home</a></il>
+                <il class="secciones-menu-link"><a href="#">Menu</a></il>
+                <il class="secciones-menu-link"><a href="#Nos">Nosotros</a></il>
+                <il class="secciones-menu-link"><a href="#Gal">Galeria</a></il>
+                <il class="secciones-menu-link"><a href="#contactSection">Contacto</a></il>
+              </ul>
+            </div>
         </div>
     </header>
     <main class="main">
@@ -83,23 +92,9 @@
         <p id="mealInstructions"></p>
       </section>
     </div>
-    <div class="volverarriba">
-      <i class="fa-solid fa-arrow-right volverarriba-icon" style="color: #ffffff;"></i>
-      <span class="volverarriba-text">----------------</span>
-      <i class="fa-solid fa-arrow-right volverarriba-icon" style="color: #ffffff;"></i>
-      <span class="volverarriba-text">----------------</span>
-      <i class="fa-solid fa-arrow-right volverarriba-icon" style="color: #ffffff;"></i>
-      <span class="volverarriba-text">----------------</span>
-      <i class="fa-solid fa-arrow-right volverarriba-icon" style="color: #ffffff;"></i>
-      <span class="volverarriba-text">----------------</span>
-      
-      <a href="#inicio" class="volverarriba-link"><i class="fa-solid fa-arrow-turn-up" style="color: #ffffff;"></i></a>
-
-    </div>
      <!-- <div id="mealContainer" class="mealContainer"></div>
         </section>-->
-
-        <div class="Nosotros">
+      <div class="Nosotros" id="Nos">
           <div class="Nosotros-h3"><h3>Nosotros</h3>
           </div>
           
@@ -122,21 +117,8 @@
           
           
       </div>
-      <div class="volverarriba">
-        <i class="fa-solid fa-arrow-right volverarriba-icon" style="color: #ffffff;"></i>
-        <span class="volverarriba-text">----------------</span>
-        <i class="fa-solid fa-arrow-right volverarriba-icon" style="color: #ffffff;"></i>
-        <span class="volverarriba-text">----------------</span>
-        <i class="fa-solid fa-arrow-right volverarriba-icon" style="color: #ffffff;"></i>
-        <span class="volverarriba-text">----------------</span>
-        <i class="fa-solid fa-arrow-right volverarriba-icon" style="color: #ffffff;"></i>
-        <span class="volverarriba-text">----------------</span>
-        
-        <a href="#inicio" class="volverarriba-link"><i class="fa-solid fa-arrow-turn-up" style="color: #ffffff;"></i></a>
-  
-      </div>
-    <section class="galeria" >
-        <h5>GALERIA DE IMAGENES</h>
+    <section class="galeria" id="Gal" >
+        <h5 class="galeriatitulo">GALERIA DE IMAGENES</h>
         <div class="galeriadeimagenes">
           <img src="imagenes/pool.jpg" alt="">
           <img src="imagenes/relax.jpg" alt="">
@@ -145,19 +127,6 @@
           <img src="imagenes/amigos-felices-comiendo-tapas.jpg" alt="">
         </div>
     </section>
-    <div class="volverarriba">
-      <i class="fa-solid fa-arrow-right volverarriba-icon" style="color: #ffffff;"></i>
-      <span class="volverarriba-text">----------------</span>
-      <i class="fa-solid fa-arrow-right volverarriba-icon" style="color: #ffffff;"></i>
-      <span class="volverarriba-text">----------------</span>
-      <i class="fa-solid fa-arrow-right volverarriba-icon" style="color: #ffffff;"></i>
-      <span class="volverarriba-text">----------------</span>
-      <i class="fa-solid fa-arrow-right volverarriba-icon" style="color: #ffffff;"></i>
-      <span class="volverarriba-text">----------------</span>
-      
-      <a href="#inicio" class="volverarriba-link"><i class="fa-solid fa-arrow-turn-up" style="color: #ffffff;"></i></a>
-
-    </div>
     <section id="contactSection" class="contactSection">
        
         <div class="contact-container">
@@ -217,6 +186,7 @@
   </div>
   </footer>
 
-    <script src="script.js"></script>
+    <script src="/JS/script.js"></script>
+    <script src="/JS/script-mobile.js"></script>
 </body>
 </html>
