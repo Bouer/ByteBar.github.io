@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ES">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,15 +8,12 @@
 
 
     <script src="https://kit.fontawesome.com/cba76f59a1.js" crossorigin="anonymous"></script>
-    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
-    <script src="app.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-
-    <!--VINCULANDO CSS y JS-->
-    <link rel="stylesheet" href="/css/estilo.css">
-    <link rel="stylesheet" href="/css/estilo-mobile.css">
+    
+      <!--VINCULANDO CSS y JS-->
+    <link rel="stylesheet" href="./css/estilo.css">
+    <link rel="stylesheet" href="./css/estilo-mobile.css">
+    <link rel="stylesheet" href="./css/estilo-tablet.css">
+    
     <!--Googlefonts-->
    <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -24,60 +21,68 @@
     <!--3Wschool-->
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 
-  <!--Javascript-->
-  <script src="/JS/script.js"></script>
-  <script src="/JS/script-mobile.js"></script>
+
 
 
 </head>
 <body>
-    <header class="header" id="header-back">
+  <header class="header" id="header-back">
         <div class="header-nav">
             <nav class="nav">
                 
-                <img src="imagenes/ByteBar_negro1.png" width="10%" height="100%"  class="nav-img"  alt="LOGO"></a>
+                <img src="./imagenes/ByteBar_negro1.png" width="10%" height="100%"  class="nav-img"  alt="LOGO"></a>
                 <input type="text" class="nav-buscador" name="Buscador" placeholder="Buscar">
                 <ul class="nav-menu">
-                    <!-- <li class="nav-menu-item">
-                    <a href="#" class="nav-menu-link nav-link">Tienda</a></li> -->
-                    <li class="nav-menu-item">
-                      <a href="index.html" class="nav-menu-link nav-link"><i class="fa-solid fa-house" style="color: #ffffff;"></i></a>
-                  </li>
-                    <li class="nav-menu-item">
-                        <a href="ubicacion.html" class="nav-menu-link nav-link"><i class="fa-solid fa-location-dot" style="color: #ffffff;"></i></a>
-                    </li>
-                    <li class="nav-menu-item">
-                        <a href="contacto.html" class="nav-menu-link nav-link"><i class="fa-solid fa-envelope" style="color: #ffffff;"></i></a>
-                    </li>
-                    <li class="nav-menu-item burguer-item">
+                    <li class="nav-menu-item burger-item">
                       <a href="#" class="nav-menu-link nav-link">
                         <i class="fa-solid fa-bars" style="color: #ffffff;"></i>
                       </a>
                   </li>
+                    <li class="nav-menu-item">
+                      <a href="index.html" class="nav-menu-link nav-link"><i class="fa-solid fa-house" style="color: #ffffff;"></i></a>
+                  </li>
+                    <li class="nav-menu-item">
+                        <a href="./sucursales.html" class="nav-menu-link nav-link"><i class="fa-solid fa-location-dot" style="color: #ffffff;"></i></a>
+                    </li>
+                    <li class="nav-menu-item">
+                        <a href="contacto.html" class="nav-menu-link nav-link"><i class="fa-solid fa-envelope" style="color: #ffffff;"></i></a>
+                    </li>
+                    
                 </ul>
             </nav>
-            <div class="nav secciones" id="secciones-back">
+            <div class="nav secciones active" id="secciones-back">
               <ul class="secciones-menu">
-                <il class="secciones-menu-link"><a href="#header-back">Home</a></il>
-                <il class="secciones-menu-link"><a href="#">Menu</a></il>
+                <il class="secciones-menu-link"><a href="./index.html">Home</a></il>
+                <il class="secciones-menu-link"><a href="./menu.html">Menu</a></il>
                 <il class="secciones-menu-link"><a href="#Nos">Nosotros</a></il>
-                <il class="secciones-menu-link"><a href="#Gal">Galeria</a></il>
-                <il class="secciones-menu-link"><a href="#contactSection">Contacto</a></il>
+                <il class="secciones-menu-link"><a href="./contacto.html">Contacto</a></il>
+                <il class="secciones-menu-link"><a href="#Reco">Recomendacion del dia</a></il>
               </ul>
             </div>
         </div>
-    </header>
-    <main class="main">
-      <div class="happyhour">
-        <p class="neon1 parpadea  " id="happyhour-titulo">Happy hour</p>
-        <p class="happyhour-hora" id="happyhour-hora">De 16 a 20Hs</p>
-        <p  id="#typingEffect" class="happyhour-2x1">2x1 EN TRAGOS!!!</p>
+  </header>
+  <main class="main">
+    <div class="happyhour">
+      <p class="neon1 parpadea  " id="happyhour-titulo">Happy hour</p>
+      <p class="happyhour-hora" id="happyhour-hora">De 16 a 20Hs</p>
+      <p  id="#typingEffect" class="happyhour-2x1">2x1 EN TRAGOS!!!</p>
+    </div>
+   
+    <section class="galeria" id="Gal" >
+      
+      <div class="galeriadeimagenes">
+        <img class="galeriadeimagenes-img" src="imagenes/pool.jpg" alt="">
+        <img class="galeriadeimagenes-img" src="imagenes/relax.jpg" alt="">
+        <img class="galeriadeimagenes-img" src="imagenes/pareja.jpg" alt="">
+        <img class="galeriadeimagenes-img" src="imagenes/chicas.jpg" alt="">
+        <img class="galeriadeimagenes-img" src="imagenes/amigos-felices-comiendo-tapas.jpg" alt="">
       </div>
-    
-    <div class="recomendacion">
+  </section>
+
+    <div class="recomendacion" id="Reco">
       <p class="recomendacion-titulo">Recomendación del día</p>
     </div>
-      <div class="cocktailSection">
+    <div class="cocktailSection">
         
         <section id="cocktailSection" >
           
@@ -88,92 +93,51 @@
                   <p id="cocktailInstructions" class="cocktailInstructions"></p>
           </div>
         </div>
-      </div>
-      <div class="mealSection">
+    </div>
+    <div class="mealSection">
       <section id="mealSection">
         <div id="mealImage"></div>
         <h2 id="mealName"></h2>
         <p id="mealInstructions"></p>
       </section>
     </div>
-     <!-- <div id="mealContainer" class="mealContainer"></div>
-        </section>-->
-      <div class="Nosotros" id="Nos">
-          <div class="Nosotros-h3"><h3>Nosotros</h3>
-          </div>
-          
-          <div class="Nosotros-desarrollo">
-            <img src="../imagenes/relax.jpg" width="30%" class="Nosotros-img" alt="">
-            <p class="Nosotros-p">Bienvenidos a ByteBar, donde la fusión de sabores y tecnología te sorprenderá en el corazón de Córdoba Capital. Fundado en 2015 por los hermanos Matias, Fiamma, Gonzalo y Agustin, ByteBar combina la pasión culinaria y la innovación tecnológica.
-
-              Nuestra misión es ofrecerte una experiencia culinaria excepcional con platos inspirados en la cocina internacional, elaborados con ingredientes frescos de la región de Córdoba. Nuestro ambiente moderno y elegante, junto con elementos tecnológicos innovadores, te sumergirán en una experiencia única.
-              
-              Nuestro equipo de chefs, mixólogos y personal amable está comprometido con la calidad y te brindará un servicio excepcional. Además de la oferta culinaria, organizamos eventos temáticos emocionantes y colaboramos con la comunidad local.
-              
-              Ven a ByteBar y déjate sorprender por nuestra combinación de sabores, tecnología y hospitalidad en Córdoba Capital.
-              
-            </p>
-          </div>
-          <div class="Nosotros-leermas">
-            <button class="w3-button w3-xlarge w3-disable w3-padding-large w3-yellow w3-round-large" id="mostrarHistoria">Leer Mas</button>
-
-          </div>
-          
-          
+     
+    <div class="Nosotros" id="Nos">
+      <div class="Nosotros-h3"><h3>Nosotros</h3>
       </div>
-    <section class="galeria" id="Gal" >
-        <h5 class="galeriatitulo">GALERIA DE IMAGENES</h>
-        <div class="galeriadeimagenes">
-          <img src="imagenes/pool.jpg" alt="">
-          <img src="imagenes/relax.jpg" alt="">
-          <img src="imagenes/pareja.jpg" alt="">
-          <img src="imagenes/chicas.jpg" alt="">
-          <img src="imagenes/amigos-felices-comiendo-tapas.jpg" alt="">
-        </div>
-    </section>
-    <section id="contactSection" class="contactSection">
-       
-        <div class="contact-container">
-          
-        <div class="contact-left">
-          <form id="contactForm">
-              <div class="form-group">
-                <input type="text" id="name" name="name"  placeholder="Nombre y Apellido*" required>
-            </div>
-            <div class="form-group">
-              <input type="email" id="email" name="email" placeholder="Ejemplo: Ouer3D@bytebar.com.ar" required>
-            </div>
-            <div class="form-group">
-              <input type="tel" id="phone" placeholder="351 - 15xxxxxxx" name="phone">
-            </div>
-          </form>
-        </div>
-        <div class="contact-right">
-          <div class="form-group">
-            <label for="message"></label>
-            <textarea id="message" name="message" rows="6" placeholder="Escribanos su comentario!!!!"></textarea>
-          </div>
-          <div class="contact-button">
-            <button class="w3-button w3-xlarge w3-disable w3-padding-large w3-yellow w3-round-large" id="mostrarHistoria">ENVIAR</button>
-          </div>
-        </div>
+      
+      <div class="Nosotros-desarrollo">
+        <img src="../imagenes/relax.jpg" width="30%" class="Nosotros-img" alt="">
+        <p class="Nosotros-p">
+          ¡Bienvenidos a ByteBar, el lugar donde los sabores se fusionan con la pasión por la tecnología en el corazón de Córdoba Capital! Nuestra historia se remonta a 1995, cuando cuatro hermanos, Matias y Fiamma, Alejandro y Agustin, decidieron dar vida a su visión de crear un espacio único que combinara la pasión por la buena comida con la innovación tecnológica.
+
+         Matias, un talentoso chef con un amor inmenso por la cocina de autor, y Fiamma, una ingeniera apasionada por las últimas tendencias tecnológicas, unieron sus fuerzas para crear ByteBar. Su objetivo era simple pero ambicioso: ofrecer a los comensales una experiencia culinaria excepcional y sumergirlos en un ambiente lleno de sorpresas tecnológicas.
+
+          En ByteBar, nuestra misión es deleitarte con una variedad de platos inspirados en la cocina internacional, elaborados con ingredientes frescos y locales de la región de Córdoba. Desde exquisitas tapas argentinas hasta sabores asiáticos cautivadores, nuestra carta es una fusión de culturas que se mezclan para crear un festín para tus sentidos.
+
+          El ambiente en ByteBar es único y cautivador. Nuestra decoración moderna y elegante se combina con elementos tecnológicos innovadores, creando una atmósfera futurista que te transportará a otro mundo. Ya sea que estés disfrutando de nuestra terraza al aire libre con vistas panorámicas de la ciudad o explorando nuestras áreas interactivas llenas de juegos de luces y hologramas, cada rincón de ByteBar te sorprenderá.
+
+          Nuestro equipo está compuesto por apasionados chefs, mixólogos expertos y un personal amable y atento, dedicados a brindarte un servicio excepcional en cada visita. Trabajamos en estrecha colaboración con proveedores locales para garantizar la frescura y calidad de nuestros ingredientes, y nos enorgullece ofrecer platos únicos y cócteles innovadores que satisfarán incluso a los paladares más exigentes.
+
+          Además de nuestra oferta culinaria, en ByteBar nos esforzamos por ofrecer una experiencia completa. Organizamos eventos temáticos emocionantes, desde noches de jazz en vivo hasta exhibiciones de realidad virtual, que te mantendrán entretenido y maravillado durante toda tu visita. Además, estamos comprometidos con nuestra comunidad, colaborando con organizaciones locales para apoyar proyectos sociales y promover el desarrollo sostenible en Córdoba.
+
+          En ByteBar, la innovación, la excelencia culinaria y la pasión por la tecnología se unen para brindarte una experiencia gastronómica única en Córdoba Capital. ¡Ven y únete a nosotros en este viaje culinario donde cada bocado es una experiencia extraordinaria!</p>
+      </div>
+    
+
+    
+
+    <section class="testimonial-section">
+      <h2 class="testimonial-section-h2">Comentarios de clientes satisfechos</h2>
+      <div class="testimonial-carousel">
       </div>
     </section>
-    <div class="wave">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#4d6160" fill-opacity="1" d="M0,96L80,112C160,128,320,160,480,160C640,160,800,128,960,106.7C1120,85,1280,75,1360,69.3L1440,64L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z"></path></svg>
-    </div>
-
-        <section class="testimonial-section">
-            <h2 class="testimonial-section-h2">Comentarios de clientes satisfechos</h2>
-            <div class="testimonial-carousel">
-            </div>
-        </section>
       
     </main>
     <footer>
       <div class="footer-conteiner">
         <div class="footer-conteiner-img">
-          <img src="imagenes/ByteBar_negro1.png " width="100%" alt="">
+          <img src="./imagenes/ByteBar_negro1.png " width="100%" alt="">
         </div>
        <div class="social-iconos">
           <a href="https://www.linkedin.com/" class="social-icon"></a>
@@ -189,7 +153,11 @@
     <a href="https://www.freepik.es/foto-gratis/amigos-felices-comiendo-tapas_1300716.htm#page=4&query=bar&position=21&from_view=search&track=sph">Imagenes by Freepik</a>
   </div>
   </footer>
+  <!--Javascript
+  <script src="./JS/script-mobile.js"></script>
+  -->
+  <script src="./JS/script.js"></script>
+  <script src="./JS/script-mobile.js"></script>
 
-    
 </body>
 </html>

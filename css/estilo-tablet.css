@@ -1,0 +1,150 @@
+@media screen and (max-width: 912px) and (min-width: 500px) {
+    * {
+        max-width: 911px;
+  }
+    html {
+     
+      background-size: contain;
+      margin: 0;
+      max-width: auto;
+      
+    }
+    body {
+      padding: 0;
+      
+    }
+      /*HEADER*/
+      .header {
+        background-image: url("../imagenes/navbar_fondo.png");
+        background-size:cover;
+        background-repeat: no-repeat;
+        height: auto;
+      }
+      
+        
+       
+      .burger-item {
+        display: flex;
+  
+      }
+      .nav-buscador {
+        display: none;
+    }
+    
+      .nav {
+        display: flex;
+        align-items: flex-end;
+        justify-content:space-between ;
+        margin: auto;
+      }
+
+      .nav-menu {
+        margin-right: 0;
+        max-width: auto;
+      }
+      .nav-menu-item {
+        margin: auto;
+        line-height: 70px;
+       }
+       .nav-menu-link {
+        padding: auto;
+       }
+       .secciones-menu {
+        display: none;
+      }
+      .secciones-menu.active {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: flex-end;
+        margin: auto;
+        padding:auto;
+      }
+      .secciones-menu-link {
+        
+        padding: auto;
+        font-size: var(--font-size-normal);
+        text-decoration:none;
+      }
+      .secciones-menu-link:hover {
+        color: #c4c4c4;
+        transform: scale(1.2);
+      }
+      .happyhour {
+       
+        justify-content: center;
+        align-items: center;
+       
+      
+      }
+
+      .happyhour-2x1 {
+        text-align:center;
+      }
+      
+@keyframes typing {
+    0% {
+      transform: translateX(none);
+    }
+   
+  }
+
+      .cocktailSection, .mealSection{
+      
+        max-width: auto;
+        margin: 10px 10px;
+        height: auto;
+        
+    }
+    #cocktailInstructions {
+        font-size: 16px;
+        margin: 1px;
+        width: 30em;
+        max-height: auto; /* Ajusta el valor según el espacio disponible */
+        
+      }
+  
+     #mealInstructions {
+    font-size: 16px;
+    color: #ffff1f;
+    margin: 0 1em 1em 10em;
+    padding: 0 1em;
+    max-height: auto; /* Ajusta el valor según el espacio disponible */
+  }
+   #mealImage {
+    margin: auto;
+    opacity: 0.9;
+    width: 320px;
+    height: 220px;
+
+   }
+    #mealName {
+    font-size: 26px;
+    font-weight: bold;
+    max-width: auto;
+    
+    margin: auto 5.5em;
+  }
+
+  .Nosotros-p {
+    font-size: 18px;
+    margin:auto 4em auto 0;
+  }
+
+
+  footer {
+    max-width:99.5%;
+        
+    /*Imagenes de fondo*/
+    background-image: url("../imagenes/fondo-textura-hormigon-oscuro.jpg"); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+   
+}
+
+}
+  
+
+ 
+       

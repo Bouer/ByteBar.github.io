@@ -1,0 +1,374 @@
+
+
+:root {
+    /*VARIABLES DE CSS*/
+    --back-color: white;
+    --color-primario: #0769e9;
+    --color-secundario: #F7C331;
+    --color-texto-invertido: white;
+    --color-texto: black;
+    --navbar-color: rgba(54, 53, 53, 0.6);
+    --seleccion-color: rgba(124, 123, 123, 0.6);
+    --mobile-background-color: #3A4460;
+    --font-size-normal: 20px;
+    --font-size-titulo: 60px;
+}
+html {
+background-image: url("../imagenes/fondo_render1.png");  
+background-size: contain;
+font-family: 'Roboto', sans-serif;
+}
+
+/*HEADER*/
+.header {
+    background-image: none;
+    margin: 0 auto;
+    
+  }
+  .header-nav {
+    z-index: 1;
+  }
+  .nav {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    background-color: var(--navbar-color);  
+    line-height: 30px;
+  }
+  
+  .nav-link {
+      color: var(--text-color-inverse);
+      text-decoration: none;
+      
+  }
+  
+  .nav-menu {
+    display: flex;
+    margin-right: 40px;
+    list-style: none;
+    max-width: 1500px;
+    flex-wrap:nowrap; 
+    
+    
+  }
+  .nav-menu-item {
+      font-size: var(--font-size-normal);
+      margin: 0 10px;
+      line-height: 90px;
+      text-transform: uppercase;
+     
+  }
+  .nav-menu-link {
+      padding: 8px 12px;
+      border-radius: 3px;
+  }
+  .nav-menu-link:hover {
+      background-color: var(--seleccion-color);
+      border-radius: 15px;
+      transition: .5s;
+  }
+  .burger-item {
+    display:none;
+  }
+  
+  .nav-buscador {
+      display: none;
+  }
+  .secciones-menu {
+    
+    display: none;
+  }
+  
+
+  
+/*MAIN*/
+
+#reserva {
+    width: 500px;
+    background-color: #ddd;
+    margin: 20px auto;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+#reserva input {
+    padding: 5px;
+    margin-bottom: 5px;
+}
+
+.container_comida {
+    display: grid;
+    grid-template-columns: repeat(3, 350px);
+    grid-template-rows: repeat(2, 400px);
+    gap: 10px;
+    justify-content: center;
+    text-align: center;
+    padding: 50px 50px;
+}
+
+.container_cafeteria,
+.container_bebidas {
+    display: grid;
+    grid-template-columns: repeat(3, 350px);
+    grid-template-rows: repeat(2, 400px);
+    gap: 10px;
+    justify-content: center;
+    text-align: center;
+    padding: 50px 50px;
+}
+
+.container_comida,
+.container_cafeteria,
+.container_bebidas {
+    background-image: url("../imagenes/fondo-textura-hormigon-oscuro.jpg");
+    width: 100%;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+
+}
+
+.img_producto {
+    width: 250px;
+    border-radius: 50%;
+    margin: 30px auto;
+    font-size: 30px;
+    position: relative;
+}
+
+
+.titulo {
+    text-decoration: none;
+    text-align: center;
+    color: #787b7e;;
+    padding: 20px;
+    width: 80px;
+    font-size: 30px;
+    position: relative;
+
+}
+
+.img_producto:hover {
+    outline: 20px solid rgb(236, 225, 70);
+    top: -20px;
+}
+
+/* .producto:select {
+    width: 200px;
+    outline: 20px solid black
+} */
+
+/* .aheader:active {
+    color: beige;
+    background-color: black;
+} */
+
+.titulo:hover {
+    text-decoration: none;
+    text-align: center;
+    color: rgb(236, 225, 70);
+    padding: 20px;
+    width: 80px;
+    font-size: 30px;
+    font-weight: bolder;
+    top: -20px;
+
+    
+}
+#menu h2{
+    font-size: 40px;
+    text-align: right;
+    padding: 30px;
+    margin: auto;
+    color: #1a1b1b;
+}
+
+#menu .titulo_menu {
+    position:relative;
+    background: #787b7e;
+    height: 90px;
+}
+
+.titulo_menu {
+    position: absolute;
+    height: 118px;
+    width: 100%;
+    background:#787b7e;
+    bottom: 0;
+}
+
+.titulo_menu::before,
+.titulo_menu:after {
+    content: "";
+    display: block;
+    position: absolute;
+    border-radius: 70% 50%;
+}
+
+.titulo_menu::after {
+    width: 55%;
+    height: 100%;
+    background-color: #787b7e;
+    left: -1.5%;
+    top: 40%;
+}
+
+.menu_carta {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    padding: 50px 50px;
+    box-sizing: border-box;
+}
+
+.carta_restaurante {
+    background-image: url(../imagenes/fondo-textura-hormigon-oscuro.jpg);
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    width: 100%;
+    opacity: 80%;
+    display: grid;
+    justify-content: center;
+    text-align: left;
+    padding: 50px 50px;
+    box-sizing: border-box;
+}
+
+.menu_carta h2 {
+    font-size: 20px;
+    color: rgb(120, 229, 233);
+}
+
+.menu_carta h3 {
+    font-size: 18px;
+    color: rgb(250, 250, 250);
+}
+
+.menu_carta h1 {
+    font-size: 35px;
+    color: rgb(142, 140, 231);
+}
+
+
+.menu_carta [id] {
+    color: rgb(142, 140, 231);
+    font-size: 30px;
+    font-weight: bolder;
+
+}
+
+  /*FOOTER*/
+
+  footer {
+    max-width:100%;
+    /*position: absolute;*/
+    bottom: 0;
+    margin-left: 0;
+    
+    /*Imagenes de fondo*/
+    background-image: url("../imagenes/fondo-textura-hormigon-oscuro.jpg"); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+   
+}
+
+
+.footer-conteiner {
+  display: flex;
+  flex-direction:row;
+  justify-content:space-around;
+  align-items: center;
+}
+.footer-conteiner-img{
+ opacity: 0.9; 
+ max-width:15%;
+ margin:2em 0 0 0;
+}
+
+.social-iconos , .footer-menu {
+    display: flex;
+    
+
+}
+
+.social-icon {
+    height: 40px;
+    width: 40px;
+    border-radius: 50px;
+    /*border: 1px solid #f2f2f2f2;*/
+    background-image: url("../imagenes/linkedin.png");
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin: 1rem;
+}
+
+.social-icon:hover{
+    background-color: black;
+    filter: invert(1);
+}
+
+.social-icon:nth-of-type(2){
+    background-image: url("../imagenes/github.png");
+    background-color: white;
+} 
+.social-icon:nth-of-type(3){
+    background-image: url("../imagenes/whatsapp.png");
+} 
+
+.footer-conteiner-copy {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  color: var(--color-texto-invertido);
+
+  margin: 5em 0 0 0;
+}
+
+@media screen and (max-width:980px) {
+
+    .container_comida,
+    .container_cafeteria,
+    .container_bebidas {
+        display: grid;
+        grid-template-columns: repeat(2, 350px);
+        grid-template-rows: repeat(2, 400px);
+        gap: 10px;
+        justify-content: center;
+        text-align: center;
+        padding: 50px 50px;
+    }
+    .menu_carta {
+        display: grid;
+        grid-template-columns: repeat(2, 400px);
+        grid-template-rows: auto;
+        gap: 10px;
+        justify-content: left;
+        text-align: left;
+        padding: 30px 30px;
+    }
+}
+
+@media screen and (max-width:850px) {
+
+    .container_comida,
+    .container_cafeteria,
+    .container_bebidas {
+        display: grid;
+        grid-template-columns:350px;
+        grid-template-rows: repeat(2, 400px);
+        gap: 10px;
+        justify-content: center;
+        text-align: center;
+        
+    }
+    .menu_carta {
+        display: grid;
+        grid-template-columns: 500px;
+        grid-template-rows: auto;
+        gap: 20px;
+        text-align: left;
+        padding: 10px 10px;
+    }
+
+}
