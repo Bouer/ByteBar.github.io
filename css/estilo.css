@@ -283,7 +283,6 @@ padding: 0 10px 0;
     width: 350px;
     height: 250px;
     opacity: 0.75;
-    
   }
   #cocktailDetails {
     margin: 1em 40em 0 10em;
@@ -412,9 +411,7 @@ padding: 0 10px 0;
     max-width: 1100px;
     height: 600px;
     margin: 3em auto 20em auto;
-   
-    
-    
+
   }
   /*TEXTO DE ARRIBA*/
   .testimonial-section-h2 {    margin: 0 10px 20px 0;
