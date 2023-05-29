@@ -51,7 +51,6 @@ fetch('https://www.themealdb.com/api/json/v1/1/random.php')
 
   /*RAMDON USER*/
 
-  // Obtener los comentarios de la API Random User
 // Obtener los comentarios de la API Random User
 fetch('https://randomuser.me/api/?results=3')
 .then(response => response.json())
