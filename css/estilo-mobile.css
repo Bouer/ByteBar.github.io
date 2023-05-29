@@ -1,13 +1,22 @@
 @media screen and (max-width: 499px)  {
 
-    * {
-        max-width: 499px;
-  }
+    :root {
+        /*VARIABLES DE CSS*/
+        --back-color: white;
+        --color-primario: #0769e9;
+        --color-secundario: #F7C331;
+        --color-texto-invertido: white;
+        --color-texto: black;
+        --navbar-color: rgba(54, 53, 53, 0.6);
+        --seleccion-color: rgba(124, 123, 123, 0.6);
+        --mobile-background-color: #3A4460;
+        --font-size-normal: 20px;
+        --font-size-titulo: 60px;
+    }
     html {
-     
       background-size: contain;
       margin: 0;
-      max-width: auto;
+      max-width: 499px;
       
     }
     body {
@@ -20,6 +29,7 @@
         background-size:cover;
         background-repeat: no-repeat;
         height: auto;
+        max-width: 499px;
       }
       
         
