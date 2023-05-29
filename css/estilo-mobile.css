@@ -27,7 +27,7 @@
       .header {
         background-image:none;
         height: auto;
-        max-width: 499px;
+        max-width: auto;
         position: fixed;
       }
       .burger-item {
@@ -61,6 +61,28 @@
        .secciones-menu {
         display: none;
       }
+      .secciones-menu.active {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: flex-end;
+        z-index: 1;
+        margin: auto;
+        padding:auto;
+      }
+      .secciones-menu-link {
+        
+        padding: auto;
+        font-size: var(--font-size-normal);
+        text-decoration:none;
+      }
+      .secciones-menu-link:hover {
+        color: #c4c4c4;
+        transform: scale(1.2);
+      }
+
+
+
       .happyhour {
         font-size: 20px;
        }
@@ -128,8 +150,10 @@
       }
       #cocktailName, #mealName {
         font-size: 26px;
-        margin: auto;
+        margin: auto 0;
+        max-width: 0 0;
       }
+      
   
      #mealInstructions {
     font-size: 10px;
