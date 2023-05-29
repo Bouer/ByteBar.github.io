@@ -57,6 +57,7 @@
             </div>
         </div>
   </header>
+
     <main>
         <div id="contacto">
             <div class="contenedor">
@@ -64,21 +65,18 @@
                 <form id="reserva" action="./show-data.html">
                     <div class="columna_izq">
                         <div class="datos_form">
-                            <input type="text" name="name" placeholder="Nombre y apellido *">
+                            <input type="text" name="name" placeholder="Nombre y apellido *" required>
                         </div>
                         <div class="datos_form">
-                            <input type="text" name="email" placeholder="E-mail *"><br>
+                            <input type="email" name="email" placeholder="E-mail *" required><br>
                             <input type="checkbox" name="newsletter" value="1">
                             <label for="newsletter">Deseo suscribirme al Newsletter</label>
                         </div>
-
-
                         <div class="datos_form">
                             <input type="text" name="tel" placeholder="Teléfono">
                         </div>
                         <p>* Campos requeridos</p>
                     </div>
-
                     <div class="columna_der">
                         <div class="datos_form">
                             <textarea class="form_texto" name="mensaje" placeholder="Comentarios"
@@ -87,10 +85,10 @@
                         <button type="submit" class="boton_enviar" id="enviar_mensaje">ENVIAR</button>
                     </div>
                 </form>
-
             </div>
         </div>
     </main>
+
     <footer>
         <div class="footer-conteiner">
           <div class="footer-conteiner-img">
