@@ -15,10 +15,9 @@
     }
       /*HEADER*/
       .header {
-        background-image: url("../imagenes/navbar_fondo.png");
-        background-size:cover;
-        background-repeat: no-repeat;
+        background-image: none;
         height: auto;
+        margin-bottom: 0;
       }
       
         
@@ -44,7 +43,8 @@
       }
       .nav-menu-item {
         margin: auto;
-        line-height: 70px;
+        line-height: 20px;
+        font-size: medium;
        }
        .nav-menu-link {
         padding: auto;
@@ -71,17 +71,22 @@
         transform: scale(1.2);
       }
       .happyhour {
-       
+        
         justify-content: center;
         align-items: center;
        
       
       }
-
+      .happyhour {
+        font-size: 30px;
+        padding: auto;
+        margin:0;
+      }
+      
       .happyhour-2x1 {
         text-align:center;
       }
-      
+
 @keyframes typing {
     0% {
       transform: translateX(none);
@@ -89,62 +94,117 @@
    
   }
 
+  .galeriadeimagenes {
+  
+    display: flex;
+    margin: auto 10px 10em 10px;
+    height: 500px;
+    z-index: 0;
+  }
+  
+  .galeriadeimagenes-img:hover {
+    cursor:grab;
+    width: 500px;
+    height: 500px;
+    opacity: 1;
+    filter: contrast(110%);
+    
+  }
+
       .cocktailSection, .mealSection{
-      
         max-width: auto;
-        margin: 10px 10px;
         height: auto;
-        
+        margin: auto 10px;
     }
+    #cocktailImage{
+      margin: 2em 0 0 5em;
+      width: 200px;
+      height: 150px;
+      opacity: 1;
+    }
+    #cocktailName {
+      color: rgb(255, 255, 255);
+      padding: auto;
+      font-size: 30px;
+      margin: auto 0 auto 1.5em;
+      
+    }
+      #cocktailDetails {
+        margin: 20px 0 20px 20px;
+      }
     #cocktailInstructions {
         font-size: 16px;
-        margin: 1px;
-        width: 30em;
-        max-height: auto; /* Ajusta el valor según el espacio disponible */
-        
-      }
-  
-     #mealInstructions {
-    font-size: 16px;
-    color: #ffff1f;
-    margin: 0 1em 1em 10em;
-    padding: 0 1em;
-    max-height: auto; /* Ajusta el valor según el espacio disponible */
-  }
-   #mealImage {
-    margin: auto;
-    opacity: 0.9;
-    width: 320px;
-    height: 220px;
+        max-height: auto;
 
+      }
+      #mealName {
+        font-size: 30px;
+        margin: auto 0 auto 15em;
+        color: rgb(3, 3, 3);
+      }
+    #mealImage {
+    margin: auto 0 auto 30em;
+    opacity: 0.8;
+    width: 200px;
+    height: 150px;
+    opacity: 1;
    }
-    #mealName {
-    font-size: 26px;
-    font-weight: bold;
-    max-width: auto;
-    
-    margin: auto 5.5em;
-  }
+
+
+ #mealInstructions {
+font-size: 16px;
+color: #ffff1f;
+margin: 0 1em 1em 5em;
+
+}
+
+.Nosotros {
+  
+  margin:  5em auto 0 auto;
+  font-family: 'Bebas Neue', sans-serif;
+}
+
 
   .Nosotros-p {
     font-size: 18px;
-    margin:auto 4em auto 0;
+    margin:auto 10px;
+  }
+  .Nosotros-img{
+    display: none;
   }
 
+  .testimonial-section {
+    
+    padding: 20px 0;
+   background-size: 100% 100%;
+    overflow: auto;
+    max-width: auto;
+    height: auto;
+    margin: 3em auto 10em auto;
+  }
+  .testimonial-box {
+    opacity: 0.9;
+    border: #d4470f solid;
+  }
 
   footer {
-    max-width:99.5%;
-        
+    max-width:auto;
+    
     /*Imagenes de fondo*/
     background-image: url("../imagenes/fondo-textura-hormigon-oscuro.jpg"); 
     background-size: cover;
     background-repeat: no-repeat;
-    
-   
+}
+.social-icon {
+  height: 35px;
+  width: 35px;
+
+}
+
+.footer-conteiner-copy {
+font-size: 10px;
+margin: 2em 0 0 0;
 }
 
 }
-  
 
- 
-       

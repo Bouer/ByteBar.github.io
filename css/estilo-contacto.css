@@ -29,12 +29,11 @@ padding: 0 10px 0;
 }
 /*HEADER*/
 .header {
-
+display: flex;
+flex-direction: column;
 background-repeat: no-repeat;
 background-size: contain;
-height: 800px;
-width: 98.5%;
-position: fixed;
+
 margin: 0 auto;
 
 }
@@ -96,6 +95,85 @@ display: none;
 }
 
 
+#contacto {
+  background-color: #f5f5f5;
+  padding: 50px 0;
+}
+
+.contenedor {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.titulo_form {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 30px;
+}
+
+#reserva {
+  display: flex;
+  justify-content: space-between;
+}
+
+.columna_izq {
+  width: 48%;
+}
+
+.datos_form {
+  margin-bottom: 20px;
+}
+
+.datos_form input[type="text"],
+.datos_form input[type="email"],
+.datos_form input[type="tel"],
+.datos_form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.datos_form textarea {
+  resize: vertical;
+  height: 120px;
+}
+
+.datos_form label {
+  font-weight: 400;
+  margin-left: 5px;
+}
+
+.columna_der {
+  width: 48%;
+}
+
+.boton_enviar {
+  display: block;
+  width: 100%;
+  padding: 10px 0;
+  background-color: #4d9ba3;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.boton_enviar:hover {
+  background-color: var(--seleccion-color);
+}
+
+@media screen and (max-width: 600px) {
+  #reserva {
+    flex-direction: column;
+  }
+  .columna_izq,
+  .columna_der {
+    width: 100%;
+  }
+}
 
 
 

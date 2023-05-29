@@ -97,26 +97,16 @@ window.addEventListener('scroll', function() {
 if (window.scrollY < 100 && w > 1367) {
   
   headerBackElement.style.backgroundImage = 'url("./imagenes/navbar_fondo.png")';
-  seccionesBackElement.style.display = 'flex';
+  //seccionesBackElement.style.display = 'flex';
  
 } else {
   headerBackElement.style.backgroundImage = 'none';
-  seccionesBackElement.style.display = 'none';  
+  //seccionesBackElement.style.display = 'none';  
 }
 
 });
 
-/*NAVBAR*/
 
-    // JavaScript para controlar el despliegue del menú
-    const burgerItem = document.querySelector('.burger-item');
-    const seccionesMenu = document.querySelector('.secciones-menu');
-
-    burgerItem.addEventListener('click', function(event) {
-      event.preventDefault(); // Evita el comportamiento predeterminado del enlace #
-    
-      seccionesMenu.classList.toggle('active');
-    });
 
 
 

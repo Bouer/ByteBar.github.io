@@ -97,14 +97,14 @@ padding: 0 10px 0;
 .secciones-menu {
   
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   
   color: var(--color-texto-invertido);
   margin: 1em auto;
   padding:0 0.5em;
 }
 .secciones-menu-link {
-  padding: 0 4em;
+  padding: 0 2.5em;
   font-size: var(--font-size-normal);
   text-align: center;
   text-transform: uppercase;
@@ -235,7 +235,7 @@ padding: 0 10px 0;
   width: 800px;
   height: 600px;
   opacity: 1;
-  filter: contrast(150%);
+  filter: contrast(120%);
   
 }
 
