@@ -261,7 +261,7 @@ padding: 0 10px 0;
   
 }
 .cocktailSection{
-    
+    display: flex;
     background-repeat: no-repeat;
     background-size: 100% 100%;
     max-width: 1100px;
@@ -277,20 +277,24 @@ padding: 0 10px 0;
   }
   #cocktailImage, #mealImage {
     display: flex;
-    margin: 3em 0 0 10em;
+    margin: auto 0;
     background-size: contain;
     background-repeat: no-repeat;
     width: 350px;
     height: 250px;
     opacity: 0.75;
   }
+  #cocktailImage {
+    margin-left: 7em;
+  }
   #cocktailDetails {
     margin: 1em 40em 0 10em;
   }
   #cocktailName, #mealName {
+    
     font-size: 35px;
     font-weight: bold;
-    max-width: 30em;
+    max-width: auto;
     color:var(--text-color-inverse);
     margin-bottom: 10px;
     font-family: 'Bebas Neue', sans-serif;
@@ -301,13 +305,13 @@ padding: 0 10px 0;
     font-size: 20px;
     color:#ffff1f;
     margin-bottom: 10px;
-    width: 30em;
+    max-width: auto;
     max-height: 100px; /* Ajusta el valor según el espacio disponible */
     overflow: auto;
     font-family: 'Noto Sans', sans-serif;
   }
    #mealImage {
-    margin: 3em 0 0 42em;
+    margin-left: 43em;
     opacity: 0.9;
     width: 320px;
     height: 220px;
@@ -316,6 +320,7 @@ padding: 0 10px 0;
    
   /*COMIDA*/
   .mealSection{
+    display: flex;
     background-image: url("../imagenes/Comida.jpg");
     background-repeat: no-repeat;
     background-size: 100% 100%;
@@ -339,7 +344,7 @@ padding: 0 10px 0;
 #mealInstructions {
   font-size: 20px;
   color: #ffff1f;
-  margin: 0 1em 1em 22em;
+  margin: auto;
   padding: 0 1em;
   max-height: 120px; /* Ajusta el valor según el espacio disponible */
   overflow: auto;
@@ -357,16 +362,22 @@ padding: 0 10px 0;
 .Nosotros-desarrollo {
   display: flex;
   flex-direction: row;
+  flex-wrap: nowrap;
   margin: 0 auto 20em auto
  
 }
 .Nosotros-img{
+  display: flex;
+  align-items:center;
+  flex-basis: content;
+  height: auto;
   opacity: 0.8;
-  margin: 0 3em 0 3em;
+  margin: 1.3em auto 0 auto;
 }
 .Nosotros-p {
-  font-size: 18px;
-  margin: 1em 4em 0em 4em;
+  font-size: 14px;
+  margin: auto auto;
+  
 }
 .Nosotros h3 {
   font-size: var(--font-size-titulo);

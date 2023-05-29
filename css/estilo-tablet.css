@@ -12,6 +12,7 @@
     body {
       padding: 0;
       
+      
     }
       /*HEADER*/
       .header {
@@ -114,7 +115,7 @@
       .cocktailSection, .mealSection{
         max-width: auto;
         height: auto;
-        margin: auto 10px;
+        margin: 30px 10px 10px 10px;
     }
     #cocktailImage{
       margin: 2em 0 0 5em;
@@ -189,10 +190,10 @@ margin: 0 1em 1em 5em;
 
   footer {
     max-width:auto;
-    
+   margin: 0 auto 30em auto;
     /*Imagenes de fondo*/
     background-image: url("../imagenes/fondo-textura-hormigon-oscuro.jpg"); 
-    background-size: cover;
+    /*background-size: cover;*/
     background-repeat: no-repeat;
 }
 .social-icon {
@@ -202,7 +203,7 @@ margin: 0 1em 1em 5em;
 }
 
 .footer-conteiner-copy {
-font-size: 10px;
+font-size: 12px;
 margin: 2em 0 0 0;
 }
 
