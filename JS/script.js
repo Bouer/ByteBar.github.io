@@ -97,7 +97,7 @@ window.addEventListener('scroll', function() {
 if (window.scrollY < 100 && w > 1367) {
   
   headerBackElement.style.backgroundImage = 'url("./imagenes/navbar_fondo.png")';
-  //seccionesBackElement.style.display = 'flex';
+  seccionesBackElement.style.display = 'flex';
  
 } else {
   headerBackElement.style.backgroundImage = 'none';
